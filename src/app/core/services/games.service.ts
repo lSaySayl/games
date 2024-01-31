@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from '../environments/environment.development';
 import { Observable } from 'rxjs';
 import { Games } from '../models/interfaces/interfaces';
 
@@ -9,8 +8,10 @@ import { Games } from '../models/interfaces/interfaces';
 })
 export class GamesService {
 
-  private apiUrl:string = environment.baseUrl;
-  private apiUrlRapid:string  = environment.baseUrlRapid;
+  private apiUrl:string = 'https://www.freetogame.com/api/games';
+  private apiUrlRapid:string  = 'https://free-to-play-games-database.p.rapidapi.com/api/games'
+
+
   private headers: HttpHeaders = new HttpHeaders({
     'X-RapidAPI-Key': '24f27993e8msh631d7568a74a4e0p1a091fjsn7613b32c5ea1',
     'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
