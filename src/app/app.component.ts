@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GamesService } from './core/services/games.service';
-import { Games } from './core/models/interfaces/interfaces';
+import { Games } from './core/models/interfaces/game.interface';
 
 @Component({
   selector: 'app-root',
