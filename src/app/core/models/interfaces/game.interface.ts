@@ -1,4 +1,5 @@
-import { Genre, Platform } from "../enums/enums";
+import { Genre, Platform } from "../enums/game-enums";
+
 
 export interface Games {
     id:                     number;
