@@ -2,7 +2,7 @@ import { Genre, Platform } from "../enums/game-enums";
 
 
 export interface Games {
-    id:                     number;
+    id:                     string;
     title:                  string;
     thumbnail:              string;
     short_description:      string;
