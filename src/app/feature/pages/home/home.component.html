@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div *ngFor="let category of categories">
+  <h2 class="bg-black text-white text-center p-3">{{ category }}</h2>
+  <section class="bg-slate-600 flex justify-center align-middle flex-wrap gap-10 pt-4">
+    <app-loader *ngIf="loading" />
+    <section *ngFor="let game of gamesByCategory[category]">
+      <app-game-card
+      [title]="game.title"
+      [description]="game.short_description"
+      [thumbnail]="game.thumbnail"
+    />
+    </section>
+  </section>
+</div>
