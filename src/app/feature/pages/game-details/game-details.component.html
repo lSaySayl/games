@@ -1,6 +1,16 @@
-<app-navbar/>
+<app-navbar></app-navbar>
 
-<div *ngIf="gameDetails">
-    <h2>{{ gameDetails.title }}</h2>
-    <p>{{ gameDetails.genre }}</p>
-  </div>
+<div class="game-details" *ngIf="gameDetails">
+  <h2 class="game-details__title">{{ gameDetails.title }}</h2>
+  <section class="game-details__container">
+    <img class="game-details__container-img" [src]="gameDetails.thumbnail" [alt]="gameDetails.title">
+  </section>
+ <section class="game-details__info">
+  <p class="game-details__info-genre"><span>Genero: </span> {{ gameDetails.genre }}</p>
+  <p class="game-details__info-description"><span>Descripción: </span>{{ gameDetails.short_description }}</p>
+  <p class="game-details__info-platform"><span>Plataforma: </span>{{ gameDetails.platform }}</p>
+  <p class="game-details__info-release-date"><span>Fecha: </span>{{ gameDetails.release_date }}</p>
+  <p class="game-details__info-developer"><span>Desarrollador:</span>{{ gameDetails.developer }}</p>
+  <a class="game-details__info-play-now" [href]="gameDetails.game_url" target="_blank">Play Now</a>
+ </section>
+</div>
