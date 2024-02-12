@@ -1,0 +1,45 @@
+.game-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
+
+  &__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  &__info {
+    max-width: 60%;
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 20px;
+
+    p {
+        margin-bottom: 4px;
+        font-weight: 400;
+        color: #bebbbb;
+
+        span {
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    &-play-now {
+      display: inline-block;
+      padding: 10px 20px; 
+      background-color: #007bff; 
+      color: #fff; 
+      text-decoration: none; 
+      border-radius: 5px; 
+      margin-top: 5px;
+    }
+  }
+}
+
+.game-details__container-img {
+    margin-bottom: 20px;
+}

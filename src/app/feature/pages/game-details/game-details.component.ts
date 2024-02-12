@@ -5,7 +5,8 @@ import { GamesService } from 'src/app/core/services/games.service';
 
 @Component({
   selector: 'app-game-details',
-  templateUrl: './game-details.component.html'
+  templateUrl: './game-details.component.html',
+  styleUrls: ['./game-details.component.scss']
 })
 export class GameDetailsComponent {
   gameId: string = '';
